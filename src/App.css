@@ -1,7 +1,7 @@
 body {
   background: #141414;
   color: #ffffff;
-  min-height: 100vh;
+  height:max-content
 }
 
 .movie-app > .row {
@@ -9,9 +9,16 @@ body {
   flex-wrap: nowrap;
 }
 
+.movie-list-container {
+  height: 50%;
+  width: 50%;
+
+}
+
 .image-container {
   position: relative;
   transition: transform 0.2s;
+  width:fit-content;
 }
 
 .image-container:hover {
@@ -27,6 +34,7 @@ body {
   position: absolute;
   background: rgba(0,0,0,0.8);
   transition: 0.5s ease;
+  width:fit-content;
   opacity: 0;
   bottom: 0;
   font-size: 20px;
